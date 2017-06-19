@@ -1,0 +1,497 @@
+{
+  "semantics": [
+    {
+      "englishLabel": "Interactive Video Editor",
+      "label": "Etkileşimli Video Editör",
+      "fields": [
+        {
+          "englishLabel": "Upload/embed video",
+          "label": "Video Yükle/Göm",
+          "fields": [
+            {
+              "englishLabel": "Add a video",
+              "label": "Bir video ekle",
+              "englishDescription": "Click below to add a video you wish to use in your interactive video. You can add a video link or upload video files. It is possible to add several versions of the video with different qualities. To ensure maximum support in browsers at least add a version in webm and mp4 formats.",
+              "description": "Etkileşimli videonuzda kullanmak istediğiniz videoyu eklemek için tıklayınız. Video bağlantısı ekleyebilir ya da dosya yükleyebilirsiniz. Farkı kalitelerde aynı videonun farklı sürümlerini yükleyebilirsiniz. İnternet gezginlerinde en iyi desteği sağlamak için en azından webm ve mp4 formatlarında sürümler ekleyiniz."
+            },
+            {
+              "englishLabel": "Start screen options",
+              "label": "Start screen options",
+              "fields": [
+                {
+                  "englishLabel": "The title of this interactive video",
+                  "label": "Etkileşimli videonun başlığı",
+                  "englishDefault": "Interactive Video",
+                  "default": "Etkileşimli Video",
+                  "englishDescription": "Used in summaries, statistics etc.",
+                  "description": "Özet ve istatistik vb. kullanılacak"
+                },
+                {
+                  "englishLabel": "Hide title on video start screen",
+                  "label": "Video başlangıç ekranının başlığını sakla"
+                },
+                {
+                  "englishLabel": "Short description (Optional)",
+                  "label": "Kısa tanım (tercie bağlı)",
+                  "englishDescription": "Optional. Display a short description text on the video start screen. Does not work for YouTube videos.",
+                  "description": "Tercihe bağlı. Video başlangıç ekranında kısa bir açıklama gösterir. Youtube videolarında gösterilmez."
+                },
+                {
+                  "englishLabel": "Poster image",
+                  "label": "Poster görseli",
+                  "englishDescription": "Image displayed before the user launches the video. Does not work for YouTube Videos.",
+                  "description": "Kullanıcı videoyu başlatmadan önce gösterilecek görsel. Youtube videolarında gösterilmez."
+                },
+                {
+                  "englishLabel": "Video copyright information",
+                  "label": "Video telif bilgisi",
+                  "englishDescription": "Information regarding copyright of the video and elements used in the video.",
+                  "description": "Video ve videoda kullanılan ögelere ait telif bilgileri"
+                }
+              ]
+            },
+            {
+              "englishLabel": "Text tracks (subtitles, captions and descriptions)",
+              "fields": [
+                {
+                  "englishLabel": "Available text tracks",
+                  "englishEntity": "Track",
+                  "field": {
+                    "englishLabel": "Track",
+                    "fields": [
+                      {
+                        "englishLabel": "Track label"
+                      },
+                      {
+                        "englishLabel": "Type kind, refer to <a target='_blank' href=https://html.spec.whatwg.org/multipage/embedded-content.html#the-track-element>HTML living standard</a>",
+                        "options": [
+                          {
+                            "englishLabel": "Subtitles"
+                          },
+                          {
+                            "englishLabel": "Captions"
+                          },
+                          {
+                            "englishLabel": "Descriptions"
+                          }
+                        ]
+                      },
+                      {
+                        "englishLabel": "Source language, must be defined for subtitles",
+                        "englishDescription": "Must be a valid BCP 47 language tag. If the kind attribute is set to subtitles, then srclang must be defined."
+                      },
+                      {
+                        "englishLabel": "Track source (WebVTT file)"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "englishLabel": "Add interactions",
+          "label": "Etkileşim ekle",
+          "fields": [
+            {
+              "field": {
+                "fields": [
+                  {
+                    "englishLabel": "Display time",
+                    "label": "Gösterim zamanı"
+                  },
+                  {
+                    "englishLabel": "Pause video",
+                    "label": "Videoyu duraklat"
+                  },
+                  {
+                    "englishLabel": "Display as",
+                    "label": "Göster",
+                    "englishDescription": "<b>Button</b> is a collapsed interaction the user must press to open. <b>Poster</b> is an expanded interaction displayed directly on top of the video",
+                    "description": "<b>Button</b> kapalıdır, kullanıcı açmak için tıklamalıdır. <b>Poster</b>  açıktır, etkileşim doğruca videonun üstünde gösterilir",
+                    "options": [
+                      {
+                        "englishLabel": "Button",
+                        "label": "Button"
+                      },
+                      {
+                        "englishLabel": "Poster",
+                        "label": "Poster"
+                      }
+                    ]
+                  },
+                  {
+                    "englishLabel": "Label",
+                    "label": "Etiket",
+                    "englishDescription": "Label displayed next to interaction icon.",
+                    "description": "Etkileşim ikonunun yanında gösterilecek etiket."
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {
+                    "englishLabel": "Adaptivity",
+                    "label": "Uyarlama",
+                    "fields": [
+                      {
+                        "englishLabel": "Action on all correct",
+                        "label": "Hepsi doğru olduğunda yapılacak",
+                        "fields": [
+                          {
+                            "englishLabel": "Seek to",
+                            "label": "İlerle",
+                            "englishDescription": "Enter timecode in the format M:SS",
+                            "description": "D:SS formatında zaman kodunu giriniz"
+                          },
+                          {
+                            "englishLabel": "Allow the user to opt out and continue",
+                            "label": "Kullanıcının devam etmesine izin ver"
+                          },
+                          {
+                            "englishLabel": "Message",
+                            "label": "Mesaj"
+                          },
+                          {
+                            "englishLabel": "Label for seek button",
+                            "label": "İlerleme düğmesinin etiketi"
+                          }
+                        ]
+                      },
+                      {
+                        "englishLabel": "Action on wrong",
+                        "label": "Hata eylemi",
+                        "fields": [
+                          {
+                            "englishLabel": "Seek to",
+                            "label": "İlerle",
+                            "englishDescription": "Enter timecode in the format M:SS",
+                            "description": "D:SS formatında zaman kodunu giriniz"
+                          },
+                          {
+                            "englishLabel": "Allow the user to opt out and continue",
+                            "label": "Kullanıcının ilerlemesine izin ver"
+                          },
+                          {
+                            "englishLabel": "Message",
+                            "label": "Mesaj"
+                          },
+                          {
+                            "englishLabel": "Label for seek button",
+                            "label": "İlerleme düğmesinin etiketi"
+                          }
+                        ]
+                      },
+                      {
+                        "englishLabel": "Require full score for task before proceeding",
+                        "label": "Devam etmek için tam puan almak zorunludur",
+                        "englishDescription": "For best functionality this option should be used in conjunction with the \"Prevent skipping forward in a video\" option of Interactive Video.",
+                        "description": "En iyi sonuç için bu seçenek \"Videoyu ileri sarmayı engelle\" seçeneği ile birlikte kullanılmalıdır."
+                      }
+                    ]
+                  },
+                  {
+                    "englishLabel": "Visuals",
+                    "label": "Görseller",
+                    "fields": [
+                      {
+                        "englishLabel": "Background color",
+                        "label": "Arkaplan rengi",
+                        "englishDefault": "rgb(255, 255, 255)",
+                        "default": "rgb(255, 255, 255)"
+                      },
+                      {
+                        "englishLabel": "Box shadow",
+                        "label": "Kutu gölgesi",
+                        "englishDescription": "Adds a subtle shadow around the interaction. You might want to disable this for completely transparent interactions",
+                        "description": "Etkileşimin çevresine gölge ekler. Tamamen transparan etkileşimler için bunu kapatabilirsiniz."
+                      }
+                    ]
+                  },
+                  {
+                    "englishLabel": "Go to on click",
+                    "label": "Tıklanınca git",
+                    "fields": [
+                      {
+                        "englishLabel": "Type",
+                        "label": "Typ",
+                        "options": [
+                          {
+                            "englishLabel": "Timecode",
+                            "label": "Timecode"
+                          },
+                          {
+                            "englishLabel": "Another page (URL)",
+                            "label": "Diğer Sayfa (URL)"
+                          }
+                        ]
+                      },
+                      {
+                        "englishLabel": "Go To",
+                        "label": "İlerle",
+                        "englishDescription": "The target time the user will be taken to upon pressing the hotspot. Enter timecode in the format M:SS.",
+                        "description": "Noktayı tıkladığında kullanıcının ilerleyeceği zaman. Zaman kodunu D:SS şeklinde giriniz."
+                      },
+                      {
+                        "englishLabel": "URL",
+                        "label": "URL",
+                        "fields": [
+                          {
+                            "englishLabel": "Protocol",
+                            "label": "Protokoll",
+                            "options": [
+                              {
+                                "englishLabel": "http://",
+                                "label": "http://"
+                              },
+                              {
+                                "englishLabel": "https://",
+                                "label": "https://"
+                              },
+                              {
+                                "englishLabel": "(root relative)",
+                                "label": "(kök ilişkili)"
+                              },
+                              {
+                                "englishLabel": "other",
+                                "label": "diğer"
+                              }
+                            ]
+                          },
+                          {
+                            "englishLabel": "URL",
+                            "label": "URL"
+                          }
+                        ]
+                      },
+                      {
+                        "englishLabel": "Visualize",
+                        "label": "Göster",
+                        "englishDescription": "Show that interaction can be clicked by adding a border and an icon",
+                        "description": "Bir çerçeve ve simge ekleyerek etkileşimin tıklanabileceğini göster"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {}
+          ]
+        },
+        {
+          "englishLabel": "Summary task",
+          "label": "Özet etkinliği",
+          "fields": [
+            {},
+            {
+              "englishLabel": "Display at",
+              "label": "Göster",
+              "englishDescription": "Number of seconds before the video ends.",
+              "description": "Video bitmeden kaç saniye önce gösterilecek"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "englishLabel": "Behavioural settings",
+      "label": "Davranış ayarları",
+      "fields": [
+        {
+          "englishLabel": "Start video at",
+          "label": "Video başlangıcı",
+          "englishDescription": "Enter timecode in the format M:SS",
+          "description": "D:SS saniye formatında zaman kodunu giriniz"
+        },
+        {
+          "englishLabel": "Loop the video",
+          "label": "Videoyu sürekli oynat",
+          "englishDescription": "Check if video should run in a loop",
+          "description": "Video sürekli oynatılacaksa tıklayınız"
+        },
+        {
+          "englishLabel": "Override \"Show Solution\" button",
+          "label": "Değiştir \"Çözümü Göster\" düğmesi",
+          "englishDescription": "This option determines if the \"Show Solution\" button will be shown for all questions, disabled for all or configured for each question individually.",
+          "description": "Bu seçenek \"Çözümü Göster\" düğmesinin bütün sorularda gösterilip gösterilmeyeceğini ya da her bir soru için ayrı ayrı ayarlanacağını belirler.",
+          "options": [
+            {
+              "englishLabel": "Enabled",
+              "label": "Açık"
+            },
+            {
+              "englishLabel": "Disabled",
+              "label": "Kapalı"
+            }
+          ]
+        },
+        {
+          "englishLabel": "Override \"Retry\" button",
+          "label": "Değiştir \"Yeniden dene\" düğmesi",
+          "englishDescription": "This option determines if the \"Retry\" button will be shown for all questions, disabled for all or configured for each question individually.",
+          "description": "Bu seçenek \"Yeniden dene\" düğmesinin bütün sorularda gösterilip gösterilmeyeceğini ya da her bir soru için ayrı ayrı ayarlanacağını belirler.",
+          "options": [
+            {
+              "englishLabel": "Enabled",
+              "label": "Açık"
+            },
+            {
+              "englishLabel": "Disabled",
+              "label": "Kapalı"
+            }
+          ]
+        },
+        {
+          "englishLabel": "Start with bookmarks menu open",
+          "label": "Yerimi menüsü açık başla",
+          "englishDescription": "This function is not available on iPad when using YouTube as video source",
+          "description": "Bu seçenek iPad'te video kaynağı olarak Youtube kullanıldığında kullanılamaz."
+        },
+        {
+          "englishLabel": "Show button for rewinding 10 seconds",
+          "label": "10 saniye geri alma düğmesini göster"
+        },
+        {
+          "englishLabel": "Prevent skipping forward in a video",
+          "label": "Videoda ilerlemeyi engelle",
+          "englishDescription": "Enabling this options will disable user video navigation through default controls",
+          "description": "Kullanıcının videoda kontrolleri kullanarak ilerlemesini engeller"
+        },
+        {
+          "englishLabel": "Deactivate sound",
+          "label": "Sesi kıs",
+          "englishDescription": "Enabling this option will deactivate the video's sound and prevent it from being switched on.",
+          "description": "Bu seçenek video sesini kısacak ve açılmasını engelleyecektir."
+        }
+      ]
+    },
+    {
+      "englishLabel": "Localize",
+      "label": "Yerelleştir",
+      "fields": [
+        {
+          "englishLabel": "Interaction title",
+          "label": "Etkileşim başlığı",
+          "englishDefault": "Interaction",
+          "default": "Etkileşim"
+        },
+        {
+          "englishLabel": "Play title",
+          "label": "Yürütme başlığı",
+          "englishDefault": "Play",
+          "default": "İzle"
+        },
+        {
+          "englishLabel": "Pause title",
+          "label": "Duraklatma başlığı",
+          "englishDefault": "Pause",
+          "default": "Duraklat"
+        },
+        {
+          "englishLabel": "Mute title",
+          "label": "Sesi kısma başlığı",
+          "englishDefault": "Mute",
+          "default": "Sesi kıs"
+        },
+        {
+          "englishLabel": "Unmute title",
+          "label": "Sesi açma başlığı",
+          "englishDefault": "Unmute",
+          "default": "Sesi aç"
+        },
+        {
+          "englishLabel": "Video quality title",
+          "label": "Video kalitesi başlığı",
+          "englishDefault": "Video Quality",
+          "default": "Video kalitesi"
+        },
+        {
+          "englishLabel": "Video captions title",
+          "label": "Video altyazı başlığı",
+          "englishDefault": "Captions",
+          "default": "Alt yazı"
+        },
+        {
+          "englishLabel": "Close button text",
+          "label": "Kapat düğmesi başlığı",
+          "englishDefault": "Close",
+          "default": "Kapat"
+        },
+        {
+          "englishLabel": "Fullscreen title",
+          "label": "Tam ekran başlığı",
+          "englishDefault": "Fullscreen",
+          "default": "Tam Ekran"
+        },
+        {
+          "englishLabel": "Exit fullscreen title",
+          "label": "Tam ekrandan çıkma başlığı",
+          "englishDefault": "Exit Fullscreen",
+          "default": "Tam ekrandan çık"
+        },
+        {
+          "englishLabel": "Summary title",
+          "label": "Özet başlığı",
+          "englishDefault": "Summary",
+          "default": "Özet"
+        },
+        {
+          "englishLabel": "Bookmarks title",
+          "label": "Yer imi başlığı",
+          "englishDefault": "Bookmarks",
+          "default": "Yer imi"
+        },
+        {
+          "englishLabel": "Default label for adaptivity seek button",
+          "label": "Uyarlama ilerleme başlığı",
+          "englishDefault": "Continue",
+          "default": "Devam et"
+        },
+        {
+          "englishLabel": "Default label for continue video button",
+          "label": "Devam etmek için varsayılan etilet",
+          "englishDefault": "Continue with video",
+          "default": "Videoya devam et"
+        },
+        {
+          "englishLabel": "Set playback rate",
+          "label": "İzleme hızını ayarla",
+          "englishDefault": "Playback Rate",
+          "default": "İzleme hızı"
+        },
+        {
+          "englishLabel": "Rewind 10 Seconds",
+          "label": "10 saniye geri al",
+          "englishDefault": "Rewind 10 Seconds",
+          "default": "10 Saniye geri"
+        },
+        {
+          "englishLabel": "Navigation is disabled text",
+          "label": "Gezinme kapalı metni",
+          "englishDefault": "Navigation is disabled",
+          "default": "Gezinme kapalı"
+        },
+        {
+          "englishLabel": "Sound is disabled text",
+          "label": "Ses kapalı metni",
+          "englishDefault": "Sound is disabled",
+          "default": "Ses kapalı"
+        },
+        {
+          "englishLabel": "Warning that the user must answer the question correctly before continuing",
+          "label": "Devam etmeden önce kullanıcının doğru cevap vermesi gerektiğine ilişkin uyarı",
+          "englishDefault": "You need to answer all the questions correctly before continuing.",
+          "default": "Devam etmeden önce bütün soruları doğru cevaplamalısınız."
+        },
+        {
+          "englishLabel": "Back button",
+          "label": "Geri düğmesi",
+          "englishDefault": "Back",
+          "default": "Geri"
+        }
+      ]
+    }
+  ]
+}
